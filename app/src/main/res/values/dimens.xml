@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //font
+    <dimen name="default_font_size">16sp</dimen>
+    <dimen name="default_a_font_size">20sp</dimen>
+    <dimen name="double_font_size">32sp</dimen>
+    <dimen name="half_font_size">8sp</dimen>
+    //padding and margin
+    <dimen name="default_size">16dp</dimen>
+    <dimen name="default_a_size">24dp</dimen>
+    <dimen name="double_size">32dp</dimen>
+    <dimen name="half_size">8dp</dimen>
+    //layout size
+    <dimen name="default_layout_size">200dp</dimen>
+</resources>

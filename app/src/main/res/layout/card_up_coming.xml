@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/default_size">
+
+    <ImageView
+        android:id="@+id/iv_movie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/up_coming_movie"
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.florent37.shapeofview.shapes.RoundRectView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:shape_roundRect_bottomLeftRadius="@dimen/default_size"
+            app:shape_roundRect_bottomRightRadius="@dimen/default_size">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_black">
+
+                <TextView
+                    android:id="@+id/tv_movie_title"
+                    style="@style/titleCardText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/half_size"
+                    android:paddingVertical="@dimen/half_size"
+                    android:text="@string/movie_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_movie_year"
+                    style="@style/titleCardText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/half_size"
+                    android:paddingVertical="@dimen/half_size"
+                    android:text="@string/movie_year"
+                    app:layout_constraintTop_toBottomOf="@id/tv_movie_title" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

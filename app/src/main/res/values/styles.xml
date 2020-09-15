@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="creatorText">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:padding">@dimen/half_size</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="titleCardText">
+        <item name="fontFamily">serif</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/double_font_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="android:layout_marginStart">@dimen/default_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/default_size</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Re-MovieDB</string>
+    <string name="splash_screen_logo">Splash Screen Logo</string>
+    <string name="developer_name">Falcer Comunity©</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="movie_year">(2019)</string>
+    <string name="up_coming_movie">Up Coming Movie</string>
+    <string name="categories">Categories</string>
+    <string name="popular">Popular</string>
+    <string name="actor_actress">Actor / Actress</string>
+</resources>
