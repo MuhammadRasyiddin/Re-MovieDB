@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
@@ -41,13 +42,13 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun getPopular(){
-        rv_popularMovie.layoutManager = LinearLayoutManager(this)
         homeViewModel.getPopularMovies().observe(this, Observer {
             when (it) {
                 is NetworkState.Success -> {
                     pb_popular.visibility = View.GONE
                     rv_popularMovie.visibility = View.VISIBLE
                     popularMovieAdapter = PopularMovieAdapter()
+                    rv_popularMovie.layoutManager = GridLayoutManager(this, 2)
                     @Suppress("UNCHECKED_CAST")
                     popularMovieAdapter.setData(it.data as List<Movie>)
                     rv_popularMovie.apply {

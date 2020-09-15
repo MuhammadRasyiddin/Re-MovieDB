@@ -29,9 +29,7 @@ object NetworkModule {
                 val req =
                     it.request().newBuilder().url(
                         it.request().url.newBuilder()
-                            .addQueryParameter("api_key", BuildConfig.API_TOKEN)
-                            .addQueryParameter("language", "en-US")
-                            .addQueryParameter("region", "jp" ).build()
+                            .addQueryParameter("api_key", BuildConfig.API_TOKEN).build()
                     ).build()
                 return@addInterceptor it.proceed(req)
             }
